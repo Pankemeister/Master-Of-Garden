@@ -4,11 +4,11 @@ import keyboard  # Requires 'pip install keyboard'
 
 buttons = ["button1.png", "button2.png", "button3.png", "button4.png", "button5.png", "button6.png", "button7.png"]
 
+print("Started")
+
 def click_any_button(timeout=10, confidence=0.9):
     """Searches for any button and clicks it as soon as it appears."""
     start_time = time.time()
-    
-    print("balls")
     
     while time.time() - start_time < timeout:
         if keyboard.is_pressed("q"):  # Stop the script if 'q' is pressed
